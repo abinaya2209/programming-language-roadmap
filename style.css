@@ -1,0 +1,28 @@
+/* Minimal styling for Programming Language Roadmap */
+:root{
+  --bg:#ffffff;--muted:#6b7280;--accent:#2563eb;--surface:#f8fafc;--text:#0f172a;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; color:var(--text);background:var(--bg)}
+.page-shell{max-width:1100px;margin:24px auto;padding:0 18px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{font-weight:700;display:flex;gap:8px;align-items:center}
+.brand-mark{font-size:20px}
+.topbar-actions{display:flex;align-items:center;gap:12px}
+.search-box{display:flex;align-items:center;background:var(--surface);padding:6px;border-radius:8px;border:1px solid rgba(15,23,42,0.04)}
+.search-box input{border:0;background:transparent;outline:0;padding:6px 8px}
+.theme-toggle{background:transparent;border:1px solid rgba(15,23,42,0.06);padding:6px 10px;border-radius:8px;cursor:pointer}
+.hero{display:flex;gap:28px;align-items:center;margin:22px 0}
+.hero-copy{flex:1}
+.hero h1{font-size:2rem;margin:6px 0}
+.eyebrow{font-weight:700;color:var(--muted);margin:0}
+.subtitle{color:var(--muted)}
+.cta-row{display:flex;gap:10px;margin-top:14px}
+.cta-primary,.cta-secondary{padding:8px 12px;border-radius:8px;border:1px solid rgba(15,23,42,0.06);cursor:pointer}
+.cta-primary{background:var(--accent);color:white;border:0}
+.language-container{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin-top:18px}
+.language-card{background:var(--surface);padding:18px;border-radius:12px;border:1px solid rgba(15,23,42,0.04);cursor:pointer;text-align:center}
+.language-card.selected{border-color:var(--accent);box-shadow:0 8px 24px rgba(37,99,235,0.08)}
+.footer{margin:40px 0;color:var(--muted);text-align:center}
+.roadmap-output{margin-top:18px}
+@media(max-width:700px){.hero{flex-direction:column}.hero-visual{display:none}}
