@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Language Roadmap Generator</title>
+    <meta
+      name="description"
+      content="A clean and modern roadmap builder for learning Python, Java and JavaScript."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="header">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark">⌘</span>
+            <span>PathCoder</span>
+          </div>
+
+          <div class="topbar-actions">
+            <div class="search-box">
+              <span class="search-icon">⌕</span>
+              <input id="language-search" type="text" placeholder="Search languages" aria-label="Search languages" />
+            </div>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+              🌙 Dark
+            </button>
+            <a href="#language-section" class="nav-link">Languages</a>
+          </div>
+        </nav>
+
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Smart learning roadmap</p>
+            <h1>Learn a programming language with confidence.</h1>
+            <p class="subtitle">
+              Choose your path, follow structured milestones, and build the skills
+              employers value.
+            </p>
+
+            <div class="cta-row">
+              <button class="cta-primary" type="button" data-language="python">
+                Start with Python
+              </button>
+              <button class="cta-secondary" type="button" data-language="javascript">
+                Explore JavaScript
+              </button>
+            </div>
+
+            <div class="quick-stats">
+              <div>
+                <strong>6</strong>
+                <span>Languages</span>
+              </div>
+              <div>
+                <strong>18+</strong>
+                <span>Milestones</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>Beginner-ready</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img src="assets/roadmap-hero.svg" alt="Roadmap illustration" />
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section id="language-section" class="language-section">
+          <div class="section-heading">
+            <p class="eyebrow accent">Select a language</p>
+            <h2>Choose your next coding path</h2>
+          </div>
+
+          <div class="language-container">
+            <div class="language-card selected" data-language="python">
+              <div class="logo-mark python"><span>P</span></div>
+              <p>Python</p>
+            </div>
+
+            <div class="language-card" data-language="java">
+              <div class="logo-mark java"><span>J</span></div>
+              <p>Java</p>
+            </div>
+
+            <div class="language-card" data-language="javascript">
+              <div class="logo-mark javascript"><span>JS</span></div>
+              <p>JavaScript</p>
+            </div>
+
+            <div class="language-card" data-language="c">
+              <span class="lang-badge badge-c">C</span>
+              <p>C</p>
+            </div>
+
+            <div class="language-card" data-language="html">
+              <span class="lang-badge badge-html">HTML</span>
+              <p>HTML</p>
+            </div>
+
+            <div class="language-card" data-language="css">
+              <span class="lang-badge badge-css">CSS</span>
+              <p>CSS</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-section">
+          <div class="feature-panel">
+            <div class="feature-copy">
+              <p class="eyebrow accent">Learning order</p>
+              <h3>Best path for beginners</h3>
+            </div>
+            <div class="feature-steps">
+              <span>HTML + CSS</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+              <span>Java</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="dashboard-panel" class="dashboard-panel" aria-live="polite"></section>
+
+        <section class="inspire-section">
+          <div class="inspire-box">
+            <h2 class="inspire-title">Start your coding journey today 🚀</h2>
+            <p class="inspire-subtitle">
+              Pick a language and build skills one milestone at a time.
+            </p>
+
+            <div class="inspire-features">
+              <div class="feature">
+                <span class="feature-icon">🌟</span>
+                <p>Structured learning path</p>
+              </div>
+
+              <div class="feature">
+                <span class="feature-icon">📝</span>
+                <p>Practice-ready roadmap</p>
+              </div>
+
+              <div class="feature">
+                <span class="feature-icon">🎓</span>
+                <p>Beginner-friendly guidance</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="output-section">
+          <div id="roadmap-output" class="roadmap-output">
+            <div class="placeholder-card">
+              Select a language to generate your learning roadmap.
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        Designed by <strong>Abinaya</strong> | Beginner-friendly project
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
